@@ -86,10 +86,10 @@ export default {
         }, 9000);
       })
       .catch((e) => {
-        this.errors.push(e);
-      
-      }); 
+        console.log(e);
+      });
   },
+
 
   methods: {
     changeArticle() {
