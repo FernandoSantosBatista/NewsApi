@@ -83,11 +83,14 @@ export default {
         this.changeArticle();
         setInterval(() => {
           this.changeArticle();
-        }, 9000).catch((e) => {
-          this.errors.push(e);
-        });
-      });
+        }, 9000);
+      })
+      .catch((e) => {
+        this.errors.push(e);
+      
+      }); 
   },
+
   methods: {
     changeArticle() {
       this.currentIndex++;
